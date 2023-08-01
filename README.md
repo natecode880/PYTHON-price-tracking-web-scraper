@@ -1,41 +1,70 @@
-# Project Information
+# Getting Started with Create React App
 
-This project provides a user interface to interact with an automated price tracking web scraper. Currently the tracker scrapes amazon.ca, but could be configured to scrape multiple sources.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Libraries/Frameworks/Modules
+## Available Scripts
 
-This project uses:
+In the project directory, you can run:
 
-- React
-- Flask
-- Playwright
-- Bright Data (Web Scraping Browser)
+### `npm start`
 
-## Using the Scraper
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Install all dependencies, create the `auth.json` file, start the flask backend, run the react frontend and interact with the tool.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-### auth.json
+### `npm test`
 
-Fill in your [Bright Data Scraping Browser](https://brightdata.com/products/scraping-browser) credentials in a `backend/scraper/auth.json` file (see `auth_example.json`).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Python Flask Backend
+### `npm run build`
 
-- `cd backend`
-- `pip install -r requirements.txt`
-- `playwright install`
-- `python app.py` or `python3 app.py`
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Running the React Frontend
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- `cd frontend`
-- `npm i`
-- `npm run start`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Setting Up Automation
+### `npm run eject`
 
-To automate the collection of prices from this software simply run the `scheduler/main.py` file at your desired increment while the python flask backend is running.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Windows
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-I have created a simple `.bat` script called `run.bat` that you can schedule to execute using the Windows Task Scheduler that will automatically run the backend api and send the appropriate request to it.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
